@@ -1,0 +1,57 @@
+<!docty[e <!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+     <!-- Added link to the jQuery Library -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+   
+    <script src="main.js"></script>
+
+</head>
+<body>
+
+
+
+        <h1>Enter minutes you want to work </h1><p>0:00</p>
+        <input id="request" type="text" value="<?php echo $end_time; ?>">
+        
+        <input id="time" type="text" value="">
+        <a href="#" class="click">Click here</a>
+
+            <script>
+            
+            var t, count;
+
+            $(document).ready(function () {
+    $('#btnct').click(function () {
+            var CCOUNT = $('#seconds').val();
+            $("#para").text(CCOUNT);
+        });
+    });
+    var t, count = 0;
+
+    function cddisplay() {
+        document.getElementById('timespan').innerHTML = count;
+          if (count === 1) {
+        } else {
+            count--;
+            t = setTimeout(cddisplay, 1000);
+        }
+    }
+
+    function countdown() {
+        count = $('#seconds').val();
+        cddisplay();
+
+    }
+
+</script>
+
+
+    
+</body>
+</html>

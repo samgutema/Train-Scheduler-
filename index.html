@@ -11,6 +11,9 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
 
+      <!-- Added link to the jQuery Library -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
     <!-- Firebase Reference -->
     <script src="https://www.gstatic.com/firebasejs/4.12.0/firebase.js"></script>
 
@@ -92,7 +95,7 @@
 
 
                             <div class="form-group">
-                                <label for="first-train-input">First Train (HH:mm - military time) </label>
+                                <label for="first-train-input">Current Time (HH:mm - military time) </label>
                                 <input class="form-control" id="first-train-input" type="text">
                             </div>
 
@@ -111,7 +114,10 @@
 
     </div>
 
+    <button onclick="clockStart()">Start</button>
 
+
+<div id="demo"> </div>
 
     <script src="main/javascript /script.js"></script>
 </body>
